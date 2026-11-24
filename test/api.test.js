@@ -1,4 +1,4 @@
-// Автоматична перевірка REST API: node --test test/
+// Автоматична перевірка REST API: npm test
 const { test, before, after } = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
