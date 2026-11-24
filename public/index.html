@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<meta name="description" content="CyberLearn — онлайн-курси з кібербезпеки">
+<title>CyberLearn — курси з кібербезпеки</title>
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">CyberLearn</a>
+  <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mainNav">☰</button>
+  <nav id="mainNav" aria-label="Головне меню">
+    <a href="#courses">Курси</a>
+    <a href="#faq">FAQ</a>
+    <a href="test.html">Тест</a>
+    <a href="login.html" data-guest>Вхід</a>
+    <a class="btn" href="register.html" data-guest>Реєстрація</a>
+    <span id="userSlot" class="muted"></span>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>Навчіться захищати себе в мережі</h1>
+    <p>Практичні курси з кібербезпеки для початківців і фахівців.</p>
+    <a class="btn light" href="#courses">Обрати курс</a>
+  </section>
+  <section id="courses" class="section">
+    <h2>Каталог курсів</h2>
+    <div class="filters">
+      <label>Пошук <input id="search" type="search" placeholder="Наприклад, парол" autocomplete="off"></label>
+      <label>Рівень
+        <select id="level">
+          <option value="">Усі рівні</option>
+          <option value="beginner">Початковий рівень</option>
+          <option value="intermediate">Середній рівень</option>
+          <option value="advanced">Просунутий рівень</option>
+        </select>
+      </label>
+    </div>
+    <p>Знайдено курсів: <strong id="count">0</strong></p>
+    <div id="courseGrid" class="grid" aria-live="polite"></div>
+  </section>
+  <section id="faq" class="section faq">
+    <h2>Часті запитання</h2>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Чи потрібні попередні знання?</button><div class="faq-a">Ні, курси початкового рівня розраховані на новачків.</div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Чи є сертифікат?</button><div class="faq-a">Так, після завершення курсу та тесту.</div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Скільки коштує навчання?</button><div class="faq-a">Базові курси безкоштовні.</div></div>
+  </section>
+</main>
+<footer class="footer">© 2026 CyberLearn</footer>
+</body>
+</html>
